@@ -18,7 +18,7 @@ function generatePassword(level, length, amount = 1) {
       }
     }
     if (arrPassword.indexOf(newPassword) !== -1) {
-      k--;
+      k++;
     } else {
       arrPassword.push(newPassword);
       newPassword = "";
@@ -30,5 +30,4 @@ function generatePassword(level, length, amount = 1) {
     return arrPassword;
   }
 }
-
 console.log(generatePassword("hard", 4, 5));
