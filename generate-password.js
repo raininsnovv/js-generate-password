@@ -19,6 +19,7 @@ function generatePassword(level, length, amount = 1) {
     }
     if (arrPassword.indexOf(newPassword) !== -1) {
       k++;
+      newPassword = '';
     } else {
       arrPassword.push(newPassword);
       newPassword = "";
